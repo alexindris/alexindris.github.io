@@ -482,6 +482,7 @@ pre code {
     padding-left: 1.5rem
 }
 .col {
+
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%
@@ -8036,9 +8037,7 @@ a.down {
     left: 46%;
 }
 
-.wrapper {
-    align-items: center;
-    justify-items: center; /* adjusted */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+.full-height {
+    height: 100%;
 }
