@@ -22,6 +22,10 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PORTFOLIO</a>
                         </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#experience">EXPERIENCE</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">SKILLS</a>
+                        </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTACT</a>
@@ -268,6 +272,76 @@
                 </div>
             </div>
         </div>
+        <section class="page-section bg-primary text-white mb-0" id="experience">
+            <!-- Experience Section Heading-->
+            <div class="text-center">
+                <h2 class="page-section-heading d-inline-block text-white">EXPERIENCE</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+        </section>
+        <section class="page-section portfolio" id="skills">
+            <!-- Skills Section Heading-->
+            <div class="text-center">
+                <h2 class="page-section-heading d-inline-block text-secondary">SKILLS</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+                    <div class="wrapper ">
+                            <div class="skill-grid">
+                                <div class="circle" id="circles-1"></div>
+                                <h3>JAVA</h3>
+                            </div>
+                            <div class="skill-grid">
+                                <div class="circle" id="circles-2"></div>
+                                <h3>PYTHON</h3>
+                            </div>
+                            <div class="skill-grid">
+                                <div class="circle" id="circles-3"></div>
+                                <h3>HTML</h3>
+                            </div>
+                            <div class="skill-grid">
+                                <div class="circle" id="circles-4"></div>
+                                <h3>CSS</h3>
+                            </div>
+                    </div>
+
+
+            <!---->
+            <script type="text/javascript" src="js/circles.js"></script>
+            <script>
+                var colors = [
+                    ['#2c3e50', '#1abc9c'], ['#2c3e50', '#1abc9c'], ['#2c3e50', '#1abc9c'], ['#2c3e50', '#1abc9c']
+                ];
+                var number = [80,10,20,30]
+                for (var i = 1; i <= 5; i++) {
+                    var child = document.getElementById('circles-' + i),
+                        percentage = 50 + (i * 10);
+
+                    Circles.create({
+                        id:         child.id,
+                        percentage: number[i-1],
+                        radius:     80,
+                        width:      15,
+                        number:   	number[i-1],
+                        text:       '%',
+                        colors:     colors[i - 1]
+                    });
+                }
+
+            </script>
+
+            <!--/-->
+        </section>
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
@@ -327,12 +401,11 @@
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="mb-4">LOCATION</h4>
-                        <p class="pre-wrap lead mb-0">2215 John Daniel Drive
-Clark, MO 65243</p>
+                        <p class="pre-wrap lead mb-0">Canet de Mar, Barcelona, 08360 Spain</p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/StartBootstrap"><i class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/sbootstrap"><i class="fab fa-fw fa-twitter"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/startbootstrap"><i class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.dribble.com/startbootstrap"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://github.com/alexindris"><i class="fab fa-fw fa-github"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/%C3%A0lex-tello-vidal-78480b15a/"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
